@@ -1,0 +1,7 @@
+def largestAndSecondLargest(sizeOfArray, arr):
+    arr=list(set(arr))
+    arr.sort(reverse=True)
+    arr2 = arr[0:2]
+    if len(arr2) == 1:
+        arr2.append(-1)
+    return arr2
